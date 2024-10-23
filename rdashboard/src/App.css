@@ -1,0 +1,119 @@
+.dashboard {
+  display: flex;
+  background-color: #f3f4f6;
+}
+
+.sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  background-color: #1e293b;
+}
+
+.sidebar.closed {
+  margin-left: -250px;
+}
+
+.sidebar-sticky {
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 1rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sidebar .nav-link {
+  color: #cbd5e1;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+}
+
+.sidebar .nav-link:hover {
+  color: #ffffff;
+  background-color: #334155;
+}
+
+.sidebar-heading {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  color: #64748b;
+  font-weight: bold;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 1.5rem;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  color: #1e293b;
+  font-weight: bold;
+}
+
+.h2 {
+  color: #334155;
+}
+
+footer {
+  background-color: #1e293b;
+  color: #cbd5e1;
+}
+
+footer a {
+  color: #60a5fa;
+}
+
+footer a:hover {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+/* Custom styles for movie dashboard */
+.progress-bar {
+  background-color: #3b82f6;
+}
+
+.table {
+  background-color: #ffffff;
+}
+
+.table thead th {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.recharts-default-tooltip {
+  background-color: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    margin-left: -250px;
+  }
+  .sidebar.open {
+    margin-left: 0;
+  }
+}
